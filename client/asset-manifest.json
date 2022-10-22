@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b46c6720.css",
-    "main.js": "/static/js/main.bea1fe31.js",
+    "main.js": "/static/js/main.f378a6cc.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/pexels-tim-mossholder-3708459.jpg": "/static/media/pexels-tim-mossholder-3708459.3dcf2cbec673d9ef6680.jpg",
     "index.html": "/index.html",
     "main.b46c6720.css.map": "/static/css/main.b46c6720.css.map",
-    "main.bea1fe31.js.map": "/static/js/main.bea1fe31.js.map",
+    "main.f378a6cc.js.map": "/static/js/main.f378a6cc.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b46c6720.css",
-    "static/js/main.bea1fe31.js"
+    "static/js/main.f378a6cc.js"
   ]
 }

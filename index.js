@@ -1,16 +1,10 @@
-const express = require("express");
 const path = require("path");
+const express = require("express");
 const app = express();
-const http = require("http");
-const cors = require("cors");
-const { Server } = require("socket.io");
-app.use(cors);
-app.use(express.static(path.join(__dirname, "client")));
+const http = require("http").Server(app);
+const io = require("socket.io")(http);
 
-const server = http.createServer(app);
-const io = new Server(server, {
-  cors: {},
-});
+app.use(express.static(path.join(__dirname, "client")));
 
 io.on("connection", (socket) => {
   socket.on("join", ({ room, global }) => {
@@ -29,6 +23,6 @@ io.on("connection", (socket) => {
 
 const port = process.env.PORT || 4000;
 
-server.listen(port, () => {
+http.listen(port, () => {
   console.log(`SERVER RUNNING: ${port}`);
 });
